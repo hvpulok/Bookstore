@@ -1,0 +1,1 @@
+- Starting mySQL server : `mysql -u root -p`
