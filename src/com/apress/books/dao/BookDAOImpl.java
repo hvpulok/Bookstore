@@ -39,7 +39,7 @@ public class BookDAOImpl implements BookDAO {
         List<Book> result = new ArrayList<>();
         List<Author> authorList = new ArrayList<>();
 
-        String sql = "select * from book inner join author on book.id = author.book_id";
+        String sql = "select * from BOOK inner join AUTHOR on BOOK.ID = AUTHOR.BOOK_ID";
 
         Connection connection = null;
         try {
@@ -72,7 +72,7 @@ public class BookDAOImpl implements BookDAO {
         List<Book> result = new ArrayList<>();
         List<Author> authorList = new ArrayList<>();
 
-        String sql = "select * from book inner join author on book.id = author.book_id" + " where book_title like '%"
+        String sql = "select * from BOOK inner join AUTHOR on BOOK.ID = AUTHOR.BOOK_ID" + " where book_title like '%"
                 + keyWord.trim() + "%'" + " or first_name like '%" + keyWord.trim() + "%'" + " or last_name like '%"
                 + keyWord.trim() + "%'";
 
